@@ -1,3 +1,4 @@
+BOT_TOKEN=1992847712:AAF0Obf-7N-NWh9u5GL7qUONBNbiOA4Nvz0;
 require('dotenv').config();
 const TelegramApi = require('node-telegram-bot-api')
 const mongoose = require('mongoose');
