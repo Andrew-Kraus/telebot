@@ -1,4 +1,4 @@
-let BOT_TOKEN='1992847712:AAF0Obf-7N-NWh9u5GL7qUONBNbiOA4Nvz0';
+const BOT_TOKEN='1992847712:AAF0Obf-7N-NWh9u5GL7qUONBNbiOA4Nvz0';
 require('dotenv').config();
 const TelegramApi = require('node-telegram-bot-api')
 const mongoose = require('mongoose');
@@ -15,7 +15,7 @@ mongoose.connect('mongodb+srv://andrew:sosok228@cluster0.rxwip.mongodb.net/test'
     console.log(err);
 })
 
-const bot = new TelegramApi(process.env.BOT_TOKEN, {polling: true});
+const bot = new TelegramApi(BOT_TOKEN, {polling: true});
 
 
 let activeGames = [];
